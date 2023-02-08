@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pilihButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/centurygothic"
+        android:includeFontPadding="false"
+        app:rippleColor="@android:color/transparent"
+        android:text="rasa"
+        android:backgroundTint="@color/abu_kuning"
+        android:textAllCaps="false"
+        android:textColor="@color/abu_tua"
+        android:textSize="18sp"
+        android:padding="12dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/grey" />
+
+</LinearLayout>

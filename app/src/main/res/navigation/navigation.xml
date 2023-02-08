@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.daharansemar.adminresto.DashboardFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_pembukuanFragment"
+            app:destination="@id/pembukuanFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_fragmentListMenu"
+            app:destination="@id/fragmentListMenu" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_fragmentListPesanan"
+            app:destination="@id/fragmentListPesanan" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_fragmentEditBanner"
+            app:destination="@id/fragmentEditBanner" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembukuanFragment"
+        android:name="com.daharansemar.adminresto.PembukuanFragment"
+        android:label="pembukuan"
+        tools:layout="@layout/fragment_pembukuan">
+        <action
+            android:id="@+id/action_pembukuanFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_pembukuanFragment_to_fragmentDetailPembukuan"
+            app:destination="@id/fragmentDetailPembukuan" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentListMenu"
+        android:name="com.daharansemar.adminresto.FragmentListMenu"
+        android:label="daftar menu"
+        tools:layout="@layout/fragment_list_menu">
+        <action
+            android:id="@+id/action_fragmentListMenu_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentListMenu_to_fragmentTambahMenuNew"
+            app:destination="@id/fragmentTambahMenuNew" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentListPesanan"
+        android:name="com.daharansemar.adminresto.FragmentListPesanan"
+        android:label="daftar pesanan"
+        tools:layout="@layout/fragment_list_pesanan">
+        <action
+            android:id="@+id/action_fragmentListPesanan_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentListPesanan_to_fragmentDetailPesanan"
+            app:destination="@id/fragmentDetailPesanan" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailPesanan"
+        android:name="com.daharansemar.adminresto.FragmentDetailPesanan"
+        android:label="detail pesanan"
+        tools:layout="@layout/fragment_detail_pesanan">
+        <action
+            android:id="@+id/action_fragmentDetailPesanan_to_fragmentListPesanan"
+            app:destination="@id/fragmentListPesanan"
+            app:popUpTo="@id/fragmentListPesanan"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="pesanan"
+            app:argType="com.daharansemar.adminresto.dataClass.Pesanan" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailPembukuan"
+        android:name="com.daharansemar.adminresto.FragmentDetailPembukuan"
+        android:label="detail pembukuan"
+        tools:layout="@layout/fragment_detail_pembukuan">
+        <action
+            android:id="@+id/action_fragmentDetailPembukuan_to_pembukuanFragment"
+            app:destination="@id/pembukuanFragment"
+            app:popUpTo="@id/pembukuanFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="rangeTanggal"
+            app:argType="long[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTambahMenuNew"
+        android:name="com.daharansemar.adminresto.FragmentTambahMenuNew"
+        android:label="tambah menu"
+        tools:layout="@layout/fragment_tambah_menu_new">
+
+        <action
+            android:id="@+id/action_fragmentTambahMenuNew_to_kelengkapanFragment"
+            app:destination="@id/kelengkapanFragment" />
+        <argument
+            android:name="menu"
+            android:defaultValue="@null"
+            app:argType="com.daharansemar.adminresto.dataClass.Menu"
+            app:nullable="true" />
+        <argument
+            android:name="tipe"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/kelengkapanFragment"
+        android:name="com.daharansemar.adminresto.KelengkapanFragment"
+        android:label="kelengkapan"
+        tools:layout="@layout/fragment_kelengkapan" >
+        <argument
+            android:name="tipe"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEditBanner"
+        android:name="com.daharansemar.adminresto.FragmentEditBanner"
+        android:label="edit poster"
+        tools:layout="@layout/fragment_edit_banner" >
+        <action
+            android:id="@+id/action_fragmentEditBanner_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMitra"
+        android:name="com.daharansemar.adminresto.FragmentMitra"
+        android:label="fragment_mitra"
+        tools:layout="@layout/fragment_mitra" />
+</navigation>

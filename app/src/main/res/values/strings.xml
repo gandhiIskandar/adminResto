@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Admin Resto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pilih_menu">pilih menu..</string>
+    <string name="pilih_rasa">pilih rasa..</string>
+    <string name="pilih_minuman">pilih minuman..</string>
+    <string name="pilih_tipe_minuman">pilih tipe minuman..</string>
+    <string name="kelengkapan_menu">kelengkapan menu</string>
+
+    <string name="hasil_pencarian">hasil pencarian \"%1$s\"</string>
+
+
+    <string name="kelengkapan">kelengkapan</string>
+    <string name="menu">menu</string>
+    <string name="rasa">rasa</string>
+    <string name="minuman">minuman</string>
+    <string name="jenisminuman">tipe minuman</string>
+    <string name="loading">Loading..</string>
+    <string name="requestToken">Request Token</string>
+
+    <string name="editgajelas">edit %1$s</string>
+
+    <string-array name="jenisCashflow">
+        <item>saldo</item>
+        <item>omset</item>
+        <item>pengeluaran</item>
+    </string-array>
+    <string name="title_activity_pending_intent">PendingIntent</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="banner">banner</string>
+    <string name="edit">edit</string>
+    <string name="logout">Logout</string>
+</resources>

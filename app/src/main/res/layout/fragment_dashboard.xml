@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingHorizontal="40dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goToMenu"
+        android:text="menu"
+        android:textStyle="bold"
+        android:textColor="@color/abu_tua"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        style="@style/blackButtonStyle"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goToPesanan"
+        android:text="pesanan"
+        android:textStyle="bold"
+        android:textColor="@color/abu_tua"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        style="@style/blackButtonStyle"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goToPembukuan"
+        android:text="pembukuan"
+        android:textStyle="bold"
+        android:textColor="@color/abu_tua"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        style="@style/blackButtonStyle"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/goToPoster"
+        android:text="edit poster"
+        android:textStyle="bold"
+        android:textColor="@color/abu_tua"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        style="@style/blackButtonStyle"/>
+</LinearLayout>
